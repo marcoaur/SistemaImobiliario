@@ -1,0 +1,12 @@
+# Arquivos de configuração do eclipse
+.project
+.classpath
+# Diretório de configuração do eclipse
+.settings/
+# Diretório criado pelo MAVEN ao compilar um projeto
+target/
+# Arquivos binários
+*.jar
+*.ear
+*.war
+*.class
