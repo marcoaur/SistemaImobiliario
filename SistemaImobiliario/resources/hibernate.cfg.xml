@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<!-- Configuração com banco de Dados MYSQL -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/bd.sici</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">tccfinal</property>
+
+		<!-- SQL Dialect (idioma do banco de dados) -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+
+		<!-- Mostrar SQL geradas no console -->
+		<property name="hibernate.show_sql">true</property>
+
+
+		<!-- Criar tabelas ou atualizar -->
+		<property name="hbm2ddl.auto">create</property>
+
+		<!-- Quantos sessões séra aberta -->
+		<property name="connection.pool_size">1</property>
+
+		<!-- Gerenciamento das sessões -->
+		<property name="current_session_context_class">thread</property>
+
+		<!-- Cache de segundo nivel Hibernate -->
+		<property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+
+		<!-- Mapeando classes -->
+		<mapping class="br.com.sistemaImobiliario.domain.teste"/> 
+	
+		
+		
+
+
+	</session-factory>
+</hibernate-configuration>

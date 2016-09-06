@@ -1,10 +1,12 @@
 package br.com.sistemaImobiliario.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class teste {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
+	
+	@Id
+	private String id;
 
 }
